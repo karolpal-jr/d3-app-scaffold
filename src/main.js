@@ -62,14 +62,6 @@ function ready(data){
           .attr('cy',d => yScale(d.a))
           .attr('r',7)
           .attr('fill', d => colorMap.get(d.c));
-
-          enter
-          .append('circle')
-          .attr('class', 'dot-inner')
-          .attr('cx', d => getOrd(d.b) * 15 )
-          .attr('cy', d => yScale(d.a))
-          .attr('r', 4.5)
-          .attr('fill', d => colorMap.get(d.d));
       }
     );
 
