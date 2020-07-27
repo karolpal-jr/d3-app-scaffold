@@ -4,11 +4,13 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "start-dev": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "d3": "^5.16.0",
-    "d3-array": "^2.4.0"
+    "d3-array": "^2.4.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "webpack": "^4.43.0",

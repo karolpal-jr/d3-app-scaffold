@@ -7,7 +7,7 @@ module.exports = {
   entry: './main.js',
   output: {
     filename: 'app.js',
-    path: '/',
+    path: resolve(__dirname),
     publicPath: '/',
   },
   plugins : [ new webpack.HotModuleReplacementPlugin()],

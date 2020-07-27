@@ -17,10 +17,9 @@ const cl = console.log;
 const svg = d3
   .select('.chart-container')
   .append('svg')
-  .attr('width', width + margin.right + margin.left)
-  .attr('height', height + margin.top + margin.bottom)
-  .append('g')
-  .attr('transform', `translate(${margin.left}, ${margin.top})`);
+  .attr("viewBox", "0 0 1400 760")
+  .attr("preserveApectRation", "xMinYMin meet")
+  .classed("svg-content", true);
 
 function ready(data){
   let dataSet = new Set();
@@ -58,8 +57,8 @@ function ready(data){
         enter
           .append('circle')
           .attr('class', 'dot-outer')
-          .attr('cx', d => getOrd(d.b) * 15)
-          .attr('cy',d => yScale(d.a))
+          .attr('cx', d => getOrd(d.b) * 15 + 30)
+          .attr('cy',d => yScale(d.a) + 10)
           .attr('r',7)
           .attr('fill', d => colorMap.get(d.c));
       }
