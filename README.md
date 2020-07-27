@@ -6,6 +6,7 @@ Contains:
   * Minimalistic HTML web page
   * Example data
   * Some basic d3 code which reads the data and plots dots onto an SVG
-  * Live server with hot reloading (webpack-dev-server)
+  * Live dev server with hot reloading (webpack-dev-server)
+  * Simple express server e.g. for heroku deploy
 
-To get it up and running `clone` and `cd` into the repo. Inside the repo run `yarn` and `yarn start`. Visit your page at `localhost:8080` and you're ready to start editing the `main.js` file. 
+To get it up and running `clone` and `cd` into the repo. Inside the repo run `yarn` and `yarn start-dev`. Visit your page at `localhost:8080` and you're ready to start editing the `main.js` file. 
